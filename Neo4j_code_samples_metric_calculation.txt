@@ -1,0 +1,47 @@
+CALL gds.betweenness.stream('funding_full_theme')
+YIELD nodeId, score
+MATCH (rt:ResearchTheme)
+WHERE id(rt) = nodeId
+  AND rt.Frascati_theme IS NOT NULL
+WITH rt.Frascati_theme AS discipline, score
+RETURN
+  discipline,
+  count(*) AS numPrograms,
+  avg(score) AS avg_betweenness,
+  max(score) AS max_betweenness
+ORDER BY avg_betweenness DESC;
+
+
+
+MATCH (g:Grant)-[:ADDRESSES]->(rt:ResearchTheme)
+WHERE rt.Frascati_theme IS NOT NULL
+RETURN
+  rt.Frascati_theme AS frascati_discipline,
+  count(DISTINCT g) AS totalGrants,
+  count(DISTINCT CASE WHEN g.ai_flag = true THEN g END)  AS aiGrants,
+  count(DISTINCT CASE WHEN g.ai_flag <> true OR g.ai_flag IS NULL THEN g END) AS nonAiGrants,
+  1.0 * count(DISTINCT CASE WHEN g.ai_flag = true THEN g END) /
+      count(DISTINCT g) AS pctAiGrants
+ORDER BY totalGrants DESC;
+
+
+
+CALL gds.louvain.stream('funding_nonai_theme')
+YIELD communityId
+WITH communityId, count(*) AS size
+RETURN max(size) AS largestCommunitySize;
+
+
+
+CALL gds.graph.project(
+  'funding_full_theme',
+  ['Grant', 'FundingAgency', 'PrincipalInvestigator', 'Organization', 'InstitutionSystem', 'ResearchTheme'],
+  {
+    FUNDED_BY: {orientation: 'UNDIRECTED'},
+    LED_BY:    {orientation: 'UNDIRECTED'},
+    HELD_AT:   {orientation: 'UNDIRECTED'},
+    PART_OF:   {orientation: 'UNDIRECTED'},
+    ADDRESSES: {orientation: 'UNDIRECTED'}
+  }
+);
+

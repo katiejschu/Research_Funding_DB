@@ -1,0 +1,149 @@
+Term,Source
+actor critic,OECD_2021
+adaboost,OECD_2021
+analogy,OECD_2021
+artificial intelligence,OECD_2021
+artificial neural network,OECD_2021
+associative memory,OECD_2021
+autonomous vehicle,OECD_2021
+back propagation,OECD_2021
+back propagation neural network,OECD_2021
+bagging,OECD_2021
+bayes classifier,OECD_2021
+bayesian belief network,OECD_2021
+bioinformatics,OECD_2021
+bp neural network,OECD_2021
+camera calibration,OECD_2021
+collaborative system,OECD_2021
+commonsense reasoning,OECD_2021
+computational biology,OECD_2021
+computational intelligence,OECD_2021
+computer vision,OECD_2021
+convolutional neural network,OECD_2021
+datum mining,OECD_2021
+decision tree,OECD_2021
+deep belief network,OECD_2021
+deep convolutional network,OECD_2021
+deep learning,OECD_2021
+deep neural network,OECD_2021
+descript logic,OECD_2021
+dimensionality reduction,OECD_2021
+discriminant analysis,OECD_2021
+elman network,OECD_2021
+elman neural network,OECD_2021
+ensemble learning,OECD_2021
+expert system,OECD_2021
+feed forward neural network,OECD_2021
+fuzzy logic,OECD_2021
+gene ontology,OECD_2021
+hidden markov model,OECD_2021
+humanoid,OECD_2021
+humanoid robotic,OECD_2021
+image alignment,OECD_2021
+image match,OECD_2021
+inference engine,OECD_2021
+information retrieval,OECD_2021
+k near neighbor,OECD_2021
+k nn classifier,OECD_2021
+kegg pathway,OECD_2021
+knowledge base,OECD_2021
+knowledge representation and reasoning,OECD_2021
+least square support vector machine,OECD_2021
+linear discriminant,OECD_2021
+machine intelligence,OECD_2021
+machine learning,OECD_2021
+machine translation,OECD_2021
+machine vision,OECD_2021
+markov decision process,OECD_2021
+multiclass classification,OECD_2021
+multilayer neural network,OECD_2021
+naive bayes,OECD_2021
+name entity recognition,OECD_2021
+natural language processing,OECD_2021
+near neighbor classifier,OECD_2021
+neural net,OECD_2021
+neural network,OECD_2021
+neuro fuzzy,OECD_2021
+neuromorphic computing,OECD_2021
+neuromorphic hardware,OECD_2021
+non rigid registration,OECD_2021
+nonnomotonic reasoning,OECD_2021
+object recognition,OECD_2021
+oppinion mining,OECD_2021
+optimal search,OECD_2021
+pattern analysis,OECD_2021
+pattern recognition,OECD_2021
+perception,OECD_2021
+person re identification,OECD_2021
+principal component analysis,OECD_2021
+question answering,OECD_2021
+radial basis function,OECD_2021
+random forest,OECD_2021
+rbf kernel,OECD_2021
+rbf neural network,OECD_2021
+recurrent neural network,OECD_2021
+reinforcement learning,OECD_2021
+rigid registration,OECD_2021
+robot system,OECD_2021
+robotic,OECD_2021
+robot,OECD_2021
+sarsa,OECD_2021
+self organizing map,OECD_2021
+sensor datum fusion,OECD_2021
+sensor network,OECD_2021
+speech recognition,OECD_2021
+spike neural network,OECD_2021
+stereo matching,OECD_2021
+supervised learning,OECD_2021
+support vector machine,OECD_2021
+svm classifier,OECD_2021
+symbolic reasoning,OECD_2021
+system and control theory,OECD_2021
+template matching,OECD_2021
+text categorization,OECD_2021
+text mining,OECD_2021
+text summarization,OECD_2021
+unsupervised learning,OECD_2021
+word sense disambiguation,OECD_2021
+transformer,Modern_Extension
+transformer model,Modern_Extension
+attention mechanism,Modern_Extension
+self-attention,Modern_Extension
+multi-head attention,Modern_Extension
+large language model,Modern_Extension
+LLM,Modern_Extension
+foundation model,Modern_Extension
+generative AI,Modern_Extension
+generative adversarial network,Modern_Extension
+GAN,Modern_Extension
+diffusion model,Modern_Extension
+denoising diffusion model,Modern_Extension
+stable diffusion,Modern_Extension
+autoencoder,Modern_Extension
+variational autoencoder,Modern_Extension
+VAE,Modern_Extension
+self-supervised learning,Modern_Extension
+multimodal model,Modern_Extension
+vision transformer,Modern_Extension
+ViT,Modern_Extension
+graph neural network,Modern_Extension
+GNN,Modern_Extension
+message passing neural network,Modern_Extension
+BERT,Modern_Extension
+GPT,Modern_Extension
+T5,Modern_Extension
+RoBERTa,Modern_Extension
+Llama,Modern_Extension
+embedding model,Modern_Extension
+embedding,Modern_Extension
+sentence transformer,Modern_Extension
+zero-shot learning,Modern_Extension
+few-shot learning,Modern_Extension
+prompt learning,Modern_Extension
+fine-tuning,Modern_Extension
+instruction tuning,Modern_Extension
+alignment,Modern_Extension
+RLHF,Modern_Extension
+model distillation,Modern_Extension
+parameter-efficient tuning,Modern_Extension
+LoRA,Modern_Extension
