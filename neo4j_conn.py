@@ -12,7 +12,7 @@ def get_driver():
     """
     uri = "neo4j+s://da53f87f.databases.neo4j.io"  # <-- change if your port is different
     user = "neo4j"                 # <-- your Neo4j username
-    password = "W5EjzWxQIIOAG3m-ShKBnz4TGAsWmOLK-j27eQxcwWs"  # <-- put your Desktop DB password
+    password = "W5EjzWxQIIOAG3m-ShKBnz4TGAsWmOLK-j27eQxcwWsb"  # <-- put your Desktop DB password
 
     driver = GraphDatabase.driver(uri, auth=(user, password))
     return driver
@@ -32,3 +32,4 @@ def run_cypher(query: str, params: dict | None = None, database="neo4j") -> list
     with driver.session() as session:
         result = session.run(query, params or {})
         return [record.data() for record in result]
+
