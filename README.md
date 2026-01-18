@@ -95,20 +95,3 @@ Graph algorithms (e.g., centrality, community detection) are used **as lenses**,
 
 These questions are intentionally open-ended and exploratory.
 
----
-
-## Project Structure
-```text
-├── data/
-│   ├── raw/
-│   └── processed/
-├── neo4j/
-│   ├── schema/
-│   └── cypher_queries/
-├── analysis/
-│   └── exploratory_views/
-├── app/
-│   └── streamlit_app.py
-├── docs/
-│   └── methodology.md
-└── README.md
